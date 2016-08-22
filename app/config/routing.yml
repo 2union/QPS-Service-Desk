@@ -1,0 +1,7 @@
+#just_open_theme:
+#    resource: "@JustOpenThemeBundle/Resources/config/routing.yml"
+#    prefix:   /
+#
+just_open_main:
+    resource: "@JustOpenMainBundle/Resources/config/routing.yml"
+    prefix:   /

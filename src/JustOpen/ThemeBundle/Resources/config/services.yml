@@ -1,0 +1,4 @@
+services:
+#    just_open_theme.example:
+#        class: JustOpen\ThemeBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

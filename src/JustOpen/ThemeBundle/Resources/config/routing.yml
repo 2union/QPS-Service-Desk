@@ -1,0 +1,3 @@
+just_open_theme_homepage:
+    path:     /
+    defaults: { _controller: JustOpenThemeBundle:Default:index }
