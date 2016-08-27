@@ -1,3 +1,59 @@
+#DefCtrl
 just_open_main_homepage:
     path:     /
     defaults: { _controller: JustOpenMainBundle:Default:index }
+
+#ProjectCtrl
+just_open_main_projects:
+    path:     /projects
+    defaults: { _controller: JustOpenMainBundle:Projects:index }
+
+just_open_main_add_edit_project:
+    path:     /projects/edit/{project_id}
+    defaults: { _controller: JustOpenMainBundle:Projects:edit }
+
+just_open_main_remove_project:
+    path:     /projects/remove/{project_id}
+    defaults: { _controller: JustOpenMainBundle:Projects:remove }
+
+just_open_main_view_project:
+    path:     /projects/{project_id}
+    defaults: { _controller: JustOpenMainBundle:Projects:view }
+
+#TicketsCtrl
+just_open_main_tickets:
+    path:     /tickets
+    defaults: { _controller: JustOpenMainBundle:Tickets:index }
+
+just_open_main_add_edit_ticket:
+    path:     /tickets/edit/{ticket_id}
+    defaults: { _controller: JustOpenMainBundle:Tickets:edit }
+
+just_open_main_remove_ticket:
+    path:     /tickets/remove/{ticket_id}
+    defaults: { _controller: JustOpenMainBundle:Tickets:remove }
+
+just_open_main_view_ticket:
+    path:     /tickets/{ticket_id}
+    defaults: { _controller: JustOpenMainBundle:Tickets:view }
+
+#UsersCtrl
+just_open_main_users:
+    path:     /users
+    defaults: { _controller: JustOpenMainBundle:Users:index }
+
+just_open_main_add_edit_user:
+    path:     /users/edit/{user_id}
+    defaults: { _controller: JustOpenMainBundle:Users:edit }
+
+just_open_main_remove_user:
+    path:     /users/remove/{user_id}
+    defaults: { _controller: JustOpenMainBundle:Users:remove }
+
+just_open_main_view_user:
+    path:     /users/{ticket_id}
+    defaults: { _controller: JustOpenMainBundle:Users:view }
+#profile of current user
+just_open_main_profile:
+    path:     /profile
+    defaults: { _controller: JustOpenMainBundle:Users:profile }
