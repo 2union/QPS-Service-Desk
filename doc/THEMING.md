@@ -15,10 +15,12 @@ individual properties:
       then not rediclare in child theme templates was taken from parent theme.
 
    c. For use some template in project, you must get it from ThemeBundel Default controller, using "forward" method.
-      Example: $this->forward('JustOpenThemeBundle:Default:layoutMail', array('subject' => 'Hello', 'body' => 'world')),
-      where 'layoutMail' relative path to template.
-      ATENTION! Camalize naming in path name used for nested of templates, 'layoutModel' means template placed in
-      "layout/mail.html.twig". Don't use camalize naming in template names!
+      Example: $this->forward('JustOpenThemeBundle:Default:theme', array(
+          'name'      => 'layout/mail'
+          'arguments' => array(subject' => 'Hello', 'body' => 'world')
+      )),
+      where 'name' relative path to template without extension. 'layout/mail' means template placed in
+      "layout/mail.html.twig".
 
 2. Selecting themes has two ways: 1. From console command "qps:theme:select name_of_theme", where "name_of_theme"
    replaced by real theme machine name what you want select. 2. From Sevice Desk configure by address "settings/themes".
@@ -27,7 +29,7 @@ individual properties:
 
    b. We recomending use first method, cause it's more secure for sable work of Service Desk
 
-3. Configuration .ini file define properties of theme
+3. Configuration .ini file define properties of theme. File must be named by machine name of theme with .ini extension.
 
    a. name - Human name of theme
 
