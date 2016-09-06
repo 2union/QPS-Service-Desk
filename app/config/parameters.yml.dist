@@ -19,3 +19,7 @@ parameters:
     secret:            ThisTokenIsNotSoSecretChangeIt
 
     desk_name: 'Master Support'
+
+    #Theming parameters
+    theme_dir: '%kernel.root_dir%/../app/themes'
+    current_theme: 'default'

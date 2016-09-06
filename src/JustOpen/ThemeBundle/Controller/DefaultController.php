@@ -15,4 +15,11 @@ class DefaultController extends Controller
     {
         return $this->render('JustOpenThemeBundle:Default:index.html.twig');
     }
+
+    public function __call($name, $arguments) {
+        //Взять Exception для отсутствующего шаблона
+        // Замечание: значение $name регистрозависимо.
+        echo "Вызов метода '$name' "
+            . implode(', ', $arguments). "\n";
+    }
 }
